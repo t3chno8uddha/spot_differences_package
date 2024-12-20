@@ -31,7 +31,7 @@ public class DifferenceManager : MonoBehaviour
 
         if (differenceObjects.Count <= 0 )
         {
-            print("Game Over!");
+            _entryPoint.InvokeGameFinished();
         }
     }
 
