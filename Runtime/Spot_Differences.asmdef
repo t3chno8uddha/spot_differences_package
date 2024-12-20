@@ -1,0 +1,17 @@
+{
+    "name": "com.appidea.MiniGamePlatform.spot_differences",
+    "rootNamespace": "com.appidea.MiniGamePlatform.spot_differences",
+    "references": [
+        "com.appidea.MiniGamePlatform.CommunicationAPI",
+        "Unity.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
