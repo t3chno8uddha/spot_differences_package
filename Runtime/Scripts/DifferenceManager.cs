@@ -13,6 +13,16 @@ public class DifferenceManager : MonoBehaviour
     [SerializeField] private Button homeButton;
     private SpotDifferencesEntryPoint _entryPoint;
 
+    private void Awake()
+    {
+        homeButton.onClick.AddListener(FinishOnButton);
+    }
+
+    void FinishOnButton()
+    {
+        _entryPoint.InvokeGameFinished();
+    }
+
     void Start()
     {
         foreach (DifferenceObject diffObj in differenceObjects)
