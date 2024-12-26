@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MiniGameName: Spot_Differences
   Version: 0.1.0
-  Url: https://pub-786c6264373344d19336d2a4c2108218.r2.dev
-  CustomRenderPipelineAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
+  Url: https://pub-bdd30e10c7d8406d84dc505dbced6b0f.r2.dev
+  CustomRenderPipelineAsset: {fileID: 11400000, guid: c6da4f0ce965754428eb9cec767cbcae, type: 2}
