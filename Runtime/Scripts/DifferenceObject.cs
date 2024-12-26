@@ -49,17 +49,17 @@ public class DifferenceObject : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Began)
             {
-                HandleTouchOrClick(touch.position);
+                HandleInput(touch.position);
             }
         }
     }
 
     void OnMouseDown()
     {
-        HandleTouchOrClick(Input.mousePosition);
+        HandleInput(Input.mousePosition);
     }
 
-    void HandleTouchOrClick(Vector3 inputPosition)
+    void HandleInput(Vector3 inputPosition)
     {
         // Convert input position to world point.
         Vector3 worldPoint = Camera.main.ScreenToWorldPoint(inputPosition);
@@ -68,7 +68,6 @@ public class DifferenceObject : MonoBehaviour
         if (hit.collider != null && hit.collider == diffCol)
         {
             manager.ResolveDifference(this);
-
 
             // Update the counterpart's sprite.
             counterpart.SetSprite(spriteRenderer.sprite);
